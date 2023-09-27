@@ -42,41 +42,31 @@ nav a {
 }
 
 main {
-  height: 700px;
-  max-width: 800px;
+  top: -200px;
+  display: flex;
+  min-height: 100vh;
+  max-width: 90%;
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center; /* Centralizar horizontalmente */
-  align-items: center; /* Centralizar verticalmente */
+  justify-content: center;
+  align-items: center;
 }
 
-/* Estilos para o formulário */
 form {
-  width: 100%;
-  text-align: center; /* Centralizar conteúdo dentro do formulário */
+  display: inline;
+  justify-content: center;
+  align-items: center;
 }
 
-.container-form {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10px;
-  text-align: left; /* Alinhar rótulos e campos à esquerda */
-}
-
-label {
-  font-weight: bold;
-}
-
-h1 {
-  margin-bottom: 30px;
+.item {
+  margin-top: 20px;
+  padding: 2px;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="password"],
 input[type="tel"],
 select {
   width: 100%;
@@ -85,36 +75,37 @@ select {
   border-radius: 5px;
 }
 
-/* Estilos para o botão de envio */
-#botaoCadastro[disabled] {
-  background-color: lightgray;
-  color: black;
-  cursor: not-allowed;
+fieldset {
+  margin: 20px;
+  padding: 10px;
 }
 
-#botaoCadastro {
-  margin-top: 30px;
+button {
+  bottom: 180px;
   background-color: #333;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  width: 50%;
 }
 
-footer {
-  text-align: center;
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+button[disabled] {
+  background-color: lightgray;
+  cursor: not-allowed;
 }
 
 img {
   max-width: 100%;
+}
+
+footer {
+  height: 60px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  clear: both;
 }
 
 footer a {

@@ -42,8 +42,8 @@ nav a {
 }
 
 main {
-  height: 700px;
-  max-width: 800px;
+  min-height: 100vh;
+  max-width: 90%;
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;
@@ -103,18 +103,17 @@ select {
   width: 50%;
 }
 
+img {
+  max-width: 100%;
+}
+
 footer {
+  height: 60px;
   text-align: center;
   background-color: #333;
   color: #fff;
   padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-img {
-  max-width: 100%;
+  clear: both;
 }
 
 footer a {
