@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesChamado.css">
+  <title>Cahamado - ServDesk</title>
+
+</head>
+
+<body>
+  <header>
+    <h1>ServDesk</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Abrir Chamado</a></li>
+        <li><a href="tickets.html">Tickets</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <input type="text" id="txtBusca" placeholder="Buscar..." />
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <section>
+      <h1>Abrir Chamado</h1>
+      <form id="form" action="">
+        <div class="container-form">
+          <div class="item ">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="item">
+            <label for="setor">Setor da Empresa:</label>
+            <select id="setor" name="setor">
+              <option value="RH">Recursos Humanos</option>
+              <option value="Financeiro">Financeiro</option>
+              <option value="TI">Tecnologia da Informação</option>
+              <option value="Operações">Operações</option>
+              <option value="Marketing">Marketing</option>
+            </select>
+            <div class="item ">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="item ">
+              <label for="telefone">Telefone:</label>
+              <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="item">
+              <label for="mensagem">Mensagem:</label>
+              <input type="text" name="mensagem" id="mensagem" required>
+            </div>
+            <fieldset>
+              <legend>Tipo de problema</legend>
+
+              <input type="radio" id="software" name="problem" value="Software" checked />
+              <label for="software">Software</label>
+
+              <input type="radio" id="hardware" name="problem" value="Hardware" />
+              <label for="hardware">Hardware</label>
+
+              <input type="radio" id="outro" name="problem" value="Outro" />
+              <label for="outro">Outro</label>
+
+            </fieldset>
+
+          </div>
+        </div>
+
+        <button id="botaoCadastro" type="submit" onclick="ticket()" disabled>Cadastrar</button>
+
+      </form>
+
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>&copy;ServDesk 2023 Sistema de Atendimento ao Cliente. Todos os direitos reservados.</p>
+  </footer>
+</body>
+<script src="scriptChamado.js"></script>
+
+</html>

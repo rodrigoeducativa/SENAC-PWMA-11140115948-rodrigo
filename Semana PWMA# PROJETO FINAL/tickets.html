@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesTickets.css">
+    <title>Tickets - ServDesk</title>
+    
+</head>
+
+<body>
+    <header>
+        <h1>ServDesk</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamado.html">Abrir Chamado</a></li>
+            <li><a href="#">Tickets</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+          </ul>
+        </nav>
+        
+      </header>
+
+    <main>
+        <section>
+            <h1>Visão Geral</h1>
+            <input type="text" id="searchInput" placeholder="Pesquisar">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Setor</th>
+                        <th>Status</th>
+                        <th>Tipo</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </section>
+
+        <section class="secao2">
+            <h2>Tipos de Chamados</h2>
+            <canvas id="pieChart"></canvas>
+
+
+
+            <button><a href="chamado.html">Abrir um chamado</a></button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;ServDesk 2023 Sistema de Atendimento ao Cliente. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="tickets.js"></script>
+</body>
+
+</html>
